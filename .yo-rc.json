@@ -1,0 +1,33 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "sogeti.mmw"
+    },
+    "jhipsterVersion": "5.7.2",
+    "applicationType": "monolith",
+    "baseName": "myMap",
+    "packageName": "sogeti.mmw",
+    "packageFolder": "sogeti/mmw",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MTUxMGI2Y2I2NjI4YjJmZTcwMzM0YzZhMzlhZGE3NTk1ZWNlYjE0M2YwNjg2YjA2NDkyN2IyMGFmYmNlY2VkOGMwMjcyZDljNjBhYWFmNWU3ZmY1M2QyZmI1OGQxNDg4MTQwMjlmN2NhZTI3MjExZWIyY2E1MDVjNTg1ODUxZGM=",
+    "clientFramework": "react",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}
