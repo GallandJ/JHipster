@@ -13,6 +13,8 @@ import settings, { SettingsState } from 'app/modules/account/settings/settings.r
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
+import leafletReducer, { leafletState } from './leaflet-reducer';
+
 export interface IRootState {
   readonly authentication: AuthenticationState;
   readonly applicationProfile: ApplicationProfileState;
@@ -25,6 +27,7 @@ export interface IRootState {
   readonly settings: SettingsState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
+  readonly leafletReducer: leafletState;
 }
 
 const rootReducer = combineReducers<IRootState>({
@@ -38,7 +41,8 @@ const rootReducer = combineReducers<IRootState>({
   password,
   settings,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
-  loadingBar
+  loadingBar,
+  leafletReducer
 });
 
 export default rootReducer;

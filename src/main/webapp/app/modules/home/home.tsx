@@ -9,6 +9,9 @@ import { Row, Col, Alert } from 'reactstrap';
 import { IRootState } from 'app/shared/reducers';
 import { getSession } from 'app/shared/reducers/authentication';
 
+import Leaflet from '../leaflet/leaflet';
+import LeafletForm from '../leaflet/leafletForm';
+
 export interface IHomeProp extends StateProps, DispatchProps {}
 
 export class Home extends React.Component<IHomeProp> {
@@ -26,6 +29,12 @@ export class Home extends React.Component<IHomeProp> {
           {account && account.login ? (
             <div>
               <Alert color="success">You are logged in as user {account.login}.</Alert>
+              <div>
+                <Leaflet />
+              </div>
+              <div>
+                <LeafletForm />
+              </div>
             </div>
           ) : (
             <div>
